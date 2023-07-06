@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
-TROJAN_WSPATH=${TROJAN_WSPATH:-'/trojan'}
-SS_WSPATH=${SS_WSPATH:-'/shadowsocks'}
+UUID=${UUID:-'46dffb33-20ba-4ec7-a8bd-5790ea1aad6e'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/46dffb33-20ba-4ec7-a8bd-5790ea1aad6e-vmess'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/46dffb33-20ba-4ec7-a8bd-5790ea1aad6e-vless'}
+TROJAN_WSPATH=${TROJAN_WSPATH:-'/46dffb33-20ba-4ec7-a8bd-5790ea1aad6e-trojan'}
+SS_WSPATH=${SS_WSPATH:-'/46dffb33-20ba-4ec7-a8bd-5790ea1aad6e-shadowsocks'}
 
 generate_config() {
   cat > config.json << EOF
@@ -21,7 +21,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}",
+                        "id":"${46dffb33-20ba-4ec7-a8bd-5790ea1aad6e}",
                         "flow":"xtls-rprx-vision"
                     }
                 ],
@@ -59,7 +59,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}"
+                        "id":"${46dffb33-20ba-4ec7-a8bd-5790ea1aad6e}"
                     }
                 ],
                 "decryption":"none"
@@ -76,7 +76,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}",
+                        "id":"${46dffb33-20ba-4ec7-a8bd-5790ea1aad6e}",
                         "level":0
                     }
                 ],
@@ -105,7 +105,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "id":"${UUID}",
+                        "id":"${46dffb33-20ba-4ec7-a8bd-5790ea1aad6e}",
                         "alterId":0
                     }
                 ]
@@ -132,7 +132,7 @@ generate_config() {
             "settings":{
                 "clients":[
                     {
-                        "password":"${UUID}"
+                        "password":"${46dffb33-20ba-4ec7-a8bd-5790ea1aad6e}"
                     }
                 ]
             },
@@ -160,7 +160,7 @@ generate_config() {
                 "clients":[
                     {
                         "method":"chacha20-ietf-poly1305",
-                        "password":"${UUID}"
+                        "password":"${46dffb33-20ba-4ec7-a8bd-5790ea1aad6e}"
                     }
                 ],
                 "decryption":"none"
